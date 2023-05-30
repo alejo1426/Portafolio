@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+.Logo
+{
+    padding-top: 1%;
+    position: absolute;
+}
+body
+{
+    background: white;
+}
+.container
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.texto
+{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    border: none;
+    top: 10%;
+    left: 10%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: white;
+    color: #0A3871;
+}
+.texto::placeholder
+{
+    color: #0A3871;
+}
+.texto:focus , .texto:active
+{
+    outline: none;
+}
+.aviso
+{
+    position: absolute; 
+    margin: 33% 0% 0% 11%;
+
+}
+.aviso p
+{
+    font-family: cursive;
+    color: black;  
+}
+.button
+{
+    position: absolute;
+    width: 80%;
+    margin-top: 35%;
+    margin-left: 10%;
+}
+#button1
+{
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0%;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0A3871;
+    border-radius: 24px;
+    font-family: cursive;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: aliceblue;
+    border: 1px solid #0A3871;
+}
+#button2
+{
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0% 1% 2%;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    font-family: cursive;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+#button3
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: relative;
+    font-family: cursive;
+    font-style: bold;
+    width: 336px;
+    height: 67px;
+    left: 70%;
+    top: 100%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+#button1:hover , #button2:hover, #button3:hover
+{
+    border: 2px solid #0A3871;
+    background-color: #0A3871;
+    color: white;
+    font-size: 25px;/**/
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#textoResultado
+{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    margin-top: 10%;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+
+}
+.Resultado
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px;
+    border-radius: 32px;
+}
+.mensaje
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    text-align: center;
+}
+.mensaje h2
+{
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #495057;
+}
+.mensaje p
+{
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+.Resultado img
+{
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: 10%;
+}   
+
+@media (max-width: 712px) 
+{
+    .container
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Resultado
+    {
+        width: 100%;
+    }
+
+    .texto
+    {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 7%;
+    }
+
+    .aviso
+    {
+        width: 80%;
+        left: 5%;
+        top: 50%;
+    }
+    .aviso padding
+    {
+        font-size: 16px;
+    }
+    .button
+    {
+        width: 80%;
+        left: 1%;
+        top: 52%;
+    }
+    #button1 , #button2
+    {
+        width: 48%;
+        border-radius: 16px;
+    }
+    #button3
+    {
+        display: flex;
+        align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+
+    position: absolute;
+    left: 40%;
+    top: 50%;
+        width: 80%;
+        border-radius: 16px;
+        margin-top: 110%;
+        margin-right: 50%;
+    }
+    #button1:hover , #button2:hover
+    {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .Resultado
+    {
+        width: 90%;
+        height: 50%;
+        left: 5%;
+        top: 80%;
+    }
+    .mensaje
+    {
+        width: 100%;
+        top: 50%;
+    }
+    .Resultado img
+    {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
